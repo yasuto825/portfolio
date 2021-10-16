@@ -1,0 +1,288 @@
+body {
+  background: #eee;
+  color: #333;
+  font-family: 'Noto Serif JP', serif;
+}
+
+body #about {
+  background: #fff;
+  padding: 1.5rem;
+  width: 100%;
+  display: none;
+}
+
+@media screen and (max-width: 414px) {
+  body #about {
+    padding: 1rem;
+  }
+}
+
+body #about .about-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+body #about .about-inner dl {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 414px) {
+  body #about .about-inner dl {
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+body #about .about-inner dl dt {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+  body #about .about-inner dl dt {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body #about .about-inner dl dt {
+    font-size: 13px;
+  }
+}
+
+body #about .about-inner dl dd {
+  line-height: 25px;
+  margin: -20px 20px 30px 150px;
+}
+
+@media screen and (max-width: 768px) {
+  body #about .about-inner dl dd {
+    line-height: 20px;
+    margin: -20px 20px 10px 100px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body #about .about-inner dl dd {
+    margin: -20px 0 0 90px;
+  }
+}
+
+body #about .about-inner dl .mail {
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+body #about .about-inner dl .prf-sp {
+  display: none;
+}
+
+@media screen and (max-width: 414px) {
+  body #about .about-inner dl .prf-sp {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+body #about .about-inner img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  body #about .about-inner img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body #about .about-inner img {
+    display: none;
+  }
+}
+
+body #wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #wrapper .article {
+  width: 60%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin: 10% 0;
+}
+
+body #wrapper .article .content {
+  margin: 20px;
+}
+
+body #wrapper .article .content a img {
+  width: 100%;
+}
+
+body #wrapper .side {
+  width: 20%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+body #wrapper .side .float {
+  position: fixed;
+}
+
+body #wrapper .side .float .about-btn {
+  display: inline-block;
+  padding: 20px;
+}
+
+body #wrapper .side .float .about-btn button {
+  font-size: 15px;
+}
+
+body #wrapper .side .float .about-btn button::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
+  font-weight: 900;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+body #wrapper .side .float .my-name {
+  position: absolute;
+  top: 110px;
+  left: 10%;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+body #wrapper .side .float .my-name h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #125D98;
+  white-space: nowrap;
+}
+
+body #wrapper .side .float .my-name h1 span {
+  font-size: 80px;
+  color: #F5A962;
+}
+
+body #wrapper .sub {
+  width: 20%;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+body #wrapper .sub .float {
+  position: fixed;
+  right: 0;
+}
+
+body #wrapper .sub .float .switch {
+  padding: 20px;
+}
+
+body #wrapper .sub .float .switch .switch-title {
+  font-size: 15px;
+}
+
+body #wrapper .sub .float .switch .toggle-switch {
+  display: table;
+  font-size: 60px;
+  margin: 0 auto;
+}
+
+body #wrapper .sub .float .switch .toggle-switch input {
+  display: none;
+}
+
+body #wrapper .sub .float .switch .toggle-switch input:checked + label {
+  background: #125D98;
+}
+
+body #wrapper .sub .float .switch .toggle-switch input:checked + label::before {
+  left: calc(100% - 30px + 0.05em);
+}
+
+body #wrapper .sub .float .switch .toggle-switch label {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 1em;
+  background: #F5A962;
+  cursor: pointer;
+}
+
+body #wrapper .sub .float .switch .toggle-switch label::before {
+  position: absolute;
+  top: 0.05em;
+  left: 0.05em;
+  width: calc(30px - 0.1em);
+  height: calc(30px - 0.1em);
+  border-radius: calc(1em - 0.1em);
+  background: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+  content: "";
+}
+
+body #wrapper .sub .top-btn {
+  display: inline-block;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+body #wrapper .sub .top-btn a {
+  display: inline-block;
+  color: #F5A962;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #125D98;
+  position: relative;
+}
+
+body #wrapper .sub .top-btn a::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f106";
+  font-weight: 900;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body footer small {
+  font-size: 15px;
+  white-space: nowrap;
+  text-align: center;
+  color: #fff;
+  display: block;
+  padding: 30px;
+  background: #125D98;
+}
+/*# sourceMappingURL=style.css.map */

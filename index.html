@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yasuto Yamamoto</title>
+
+    <meta name="description" content="山本靖人のポートフォリオです。" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- プロフィール -->
+    <div id="about">
+      <div class="about-inner">
+        <dl>
+          <!-- PROFILE -->
+          <dt>PROFILE</dt>
+          <dd>
+            山本 靖人
+            <br />
+            1999/08/25
+            <br />
+            大阪生まれ、茨城育ち、福島在住
+          </dd>
+
+          <!-- CONTACT -->
+          <dt>CONTACT</dt>
+          <dd class="mail">
+            <a href="mailto:yasuto825&#64;gmail.com">yasuto825&#64;gmail.com</a>
+          </dd>
+
+          <!-- スマホ版プロフィール写真 -->
+          <img
+            src="./images/prf.jpg"
+            alt="スマホ版プロフィール写真"
+            class="prf-sp"
+          />
+        </dl>
+
+        <!-- プロフィール写真 -->
+        <img src="./images/prf.jpg" alt="プロフィール写真" />
+      </div>
+    </div>
+
+    <!-- コンテンツ -->
+    <div id="wrapper">
+      <!-- メインエリア -->
+      <article class="article">
+        <div class="content">
+          <a href=""><img src="./images/countdown.png" alt="Countdowm" /></a>
+        </div>
+        <div class="content">
+          <a href=""><img src="./images/todolist.png" alt="Todo List" /></a>
+        </div>
+        <div class="content">
+          <a href=""><img src="./images/sabaneko.png" alt="sabaneko" /></a>
+        </div>
+        <div class="content">
+          <a href=""><img src="./images/meditation.png" alt="meditation" /></a>
+        </div>
+        <div class="content">
+          <a href=""><img src="./images/weather.png" alt="weather" /></a>
+        </div>
+      </article>
+
+      <!-- サイドエリア -->
+      <aside class="side">
+        <div class="float">
+          <!-- アバウトボタン -->
+          <div class="about-btn">
+            <button>ABOUT</button>
+          </div>
+
+          <!-- 名前 -->
+          <div class="my-name">
+            <h1><span>y</span>asuto <span>y</span>amamoto</h1>
+          </div>
+        </div>
+      </aside>
+
+      <!-- サブエリア -->
+      <div class="sub">
+        <div class="float">
+          <!-- 切り替えスイッチ -->
+          <div class="switch">
+            <div class="switch-title">WEB/APP</div>
+            <div class="toggle-switch">
+              <input type="checkbox" name="xxx" id="cb-toggle-switch" />
+              <label for="cb-toggle-switch"></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- TOPに戻るボタン -->
+        <div class="top-btn">
+          <a href="#wrapper"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- フッター -->
+    <footer>
+      <small>Copyright &copy; Yasuto Yamamoto</small>
+    </footer>
+
+    <!-- jQuery読み込み -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQueryファイル -->
+    <script src="./index.js"></script>
+  </body>
+</html>
