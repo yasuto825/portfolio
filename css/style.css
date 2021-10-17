@@ -6,7 +6,7 @@ body {
 
 body #about {
   background: #fff;
-  padding: 1.5rem;
+  padding: 3rem;
   width: 100%;
   display: none;
 }
@@ -93,6 +93,7 @@ body #about .about-inner dl .prf-sp {
     display: block;
     width: 50px;
     height: 50px;
+    border: 2px solid #125D98;
   }
 }
 
@@ -100,6 +101,7 @@ body #about .about-inner img {
   width: 180px;
   height: 180px;
   border-radius: 50%;
+  border: 3px solid #125D98;
 }
 
 @media screen and (max-width: 768px) {
@@ -153,8 +155,20 @@ body #wrapper .side .float .about-btn {
   padding: 20px;
 }
 
+@media screen and (max-width: 414px) {
+  body #wrapper .side .float .about-btn {
+    padding: 10px;
+  }
+}
+
 body #wrapper .side .float .about-btn button {
   font-size: 15px;
+}
+
+@media screen and (max-width: 414px) {
+  body #wrapper .side .float .about-btn button {
+    font-size: 13px;
+  }
 }
 
 body #wrapper .side .float .about-btn button::after {
@@ -165,25 +179,90 @@ body #wrapper .side .float .about-btn button::after {
   padding-left: 10px;
 }
 
-body #wrapper .side .float .my-name {
-  position: absolute;
-  top: 110px;
-  left: 10%;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+@media screen and (max-width: 414px) {
+  body #wrapper .side .float .about-btn button::after {
+    padding-left: 5px;
+  }
 }
 
-body #wrapper .side .float .my-name h1 {
-  font-size: 50px;
+body #wrapper .side .float .about-btn .close::after {
+  content: "\f00d";
+}
+
+@media screen and (max-width: 414px) {
+  body #wrapper .side .float .about-btn .close::after {
+    font-size: 13px;
+  }
+}
+
+body #wrapper .side .my-name {
+  position: fixed;
+  left: 11%;
+  margin-top: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+  body #wrapper .side .my-name {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body #wrapper .side .my-name {
+    left: 9%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body #wrapper .side .my-name {
+    left: 6%;
+    margin-top: 13%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body #wrapper .side .my-name {
+    left: 10px;
+    margin-top: 14%;
+  }
+}
+
+body #wrapper .side .my-name h1 {
+  font-size: 70px;
   font-weight: 900;
-  color: #125D98;
-  white-space: nowrap;
+  color: #aaa;
+  opacity: .5;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
-body #wrapper .side .float .my-name h1 span {
-  font-size: 80px;
+body #wrapper .side .my-name h1:hover {
+  opacity: 1;
   color: #F5A962;
+}
+
+@media screen and (max-width: 1200px) {
+  body #wrapper .side .my-name h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body #wrapper .side .my-name h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body #wrapper .side .my-name h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body #wrapper .side .my-name h1 {
+    font-size: 20px;
+  }
 }
 
 body #wrapper .sub {
@@ -195,15 +274,48 @@ body #wrapper .sub {
 
 body #wrapper .sub .float {
   position: fixed;
-  right: 0;
+  right: 8%;
+  margin-top: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+  body #wrapper .sub .float {
+    right: 7%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body #wrapper .sub .float {
+    right: 6%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body #wrapper .sub .float {
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body #wrapper .sub .float {
+    right: 4%;
+    margin-top: 10%;
+  }
 }
 
 body #wrapper .sub .float .switch {
-  padding: 20px;
+  padding-top: 20px;
 }
 
 body #wrapper .sub .float .switch .switch-title {
   font-size: 15px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 414px) {
+  body #wrapper .sub .float .switch .switch-title {
+    font-size: 13px;
+  }
 }
 
 body #wrapper .sub .float .switch .toggle-switch {
@@ -278,11 +390,16 @@ body #wrapper .sub .top-btn a::after {
 
 body footer small {
   font-size: 15px;
-  white-space: nowrap;
   text-align: center;
   color: #fff;
   display: block;
   padding: 30px;
   background: #125D98;
+}
+
+@media screen and (max-width: 414px) {
+  body footer small {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

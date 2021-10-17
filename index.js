@@ -7,10 +7,11 @@ $(function () {
   $(".about-btn").on("click", function () {
     $("#about").slideToggle(300);
     $("#about").toggleClass("open");
+    $(".side button").toggleClass("close");
 
     if ($(".open").length) {
       // .floatのアニメーション
-      $(".float").animate({ top: aboutHeight }, 300);
+      $(".float,.my-name").animate({ top: aboutHeight }, 300);
 
       // #aboutにCSSを追加
       aboutArea.css({
@@ -22,7 +23,7 @@ $(function () {
       $("#wrapper").animate({ marginTop: aboutHeight }, 300);
     } else {
       // .floatのアニメーション
-      $(".float").animate({ top: "0px" }, 300);
+      $(".float,.my-name").animate({ top: "0px" }, 300);
 
       // #wrapperのアニメーション
       $("#wrapper").animate({ marginTop: 0 }, 300);
