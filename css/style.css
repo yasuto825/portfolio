@@ -198,38 +198,44 @@ body #wrapper .side .float .about-btn .close::after {
 body #wrapper .side .my-name {
   position: fixed;
   left: 11%;
-  margin-top: 10%;
+  margin-top: 11%;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
 }
 
 @media screen and (max-width: 1200px) {
   body #wrapper .side .my-name {
     left: 10%;
+    margin-top: 12%;
   }
 }
 
 @media screen and (max-width: 1000px) {
   body #wrapper .side .my-name {
     left: 9%;
+    margin-top: 13%;
   }
 }
 
 @media screen and (max-width: 768px) {
   body #wrapper .side .my-name {
     left: 6%;
-    margin-top: 13%;
+    margin-top: 14%;
   }
 }
 
 @media screen and (max-width: 414px) {
   body #wrapper .side .my-name {
     left: 10px;
-    margin-top: 14%;
+    margin-top: 17%;
   }
 }
 
 body #wrapper .side .my-name h1 {
   font-size: 70px;
   font-weight: 900;
+  white-space: nowrap;
   color: #aaa;
   opacity: .5;
   -webkit-transition: .3s;
@@ -255,13 +261,13 @@ body #wrapper .side .my-name h1:hover {
 
 @media screen and (max-width: 768px) {
   body #wrapper .side .my-name h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
 @media screen and (max-width: 414px) {
   body #wrapper .side .my-name h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 
