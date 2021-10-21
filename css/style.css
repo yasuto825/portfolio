@@ -135,8 +135,37 @@ body #wrapper .article .content {
   margin: 20px;
 }
 
+body #wrapper .article .content h2 {
+  display: inline-block;
+  font-size: 20px;
+}
+
+body #wrapper .article .content a {
+  display: inline-block;
+  margin-top: 5px;
+  text-decoration: underline;
+  color: #aaa;
+}
+
 body #wrapper .article .content a img {
   width: 100%;
+}
+
+body #wrapper .article .content dl {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  margin: 10px;
+}
+
+body #wrapper .article .content dl dt {
+  font-weight: normal;
+  margin: 5px;
+}
+
+body #wrapper .article .content dl dd {
+  margin: 5px;
 }
 
 body #wrapper .side {
@@ -314,14 +343,9 @@ body #wrapper .sub .float .switch {
 }
 
 body #wrapper .sub .float .switch .switch-title {
-  font-size: 15px;
+  text-align: center;
+  font-size: 12px;
   margin-bottom: 5px;
-}
-
-@media screen and (max-width: 414px) {
-  body #wrapper .sub .float .switch .switch-title {
-    font-size: 13px;
-  }
 }
 
 body #wrapper .sub .float .switch .toggle-switch {

@@ -120,9 +120,34 @@ body {
       .content {
         margin: 20px;
 
+        h2 {
+          display: inline-block;
+          font-size: 20px;
+        }
+
         a {
+          display: inline-block;
+          margin-top: 5px;
+          text-decoration: underline;
+          color: #aaa;
+
           img {
             width: 100%;
+          }
+        }
+
+        dl {
+          display: grid;
+          grid-template-columns: 20% 80%;
+          margin: 10px;
+
+          dt {
+            font-weight: normal;
+            margin: 5px;
+          }
+
+          dd {
+            margin: 5px;
           }
         }
       }
@@ -263,12 +288,9 @@ body {
           padding-top: 20px;
 
           .switch-title {
-            font-size: 15px;
+            text-align: center;
+            font-size: 12px;
             margin-bottom: 5px;
-
-            @include mq(sm) {
-              font-size: 13px;
-            }
           }
 
           .toggle-switch {
