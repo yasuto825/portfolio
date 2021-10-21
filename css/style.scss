@@ -113,7 +113,7 @@ body {
     display: flex;
 
     .article {
-      width: 60%;
+      width: 80%;
       order: 2;
       margin: 10% 0;
 
@@ -123,31 +123,74 @@ body {
         h2 {
           display: inline-block;
           font-size: 20px;
+          margin-bottom: 5px;
+
+          @include mq(md) {
+            font-size: 15px;
+          }
+
+          @include mq(sm) {
+            font-size: 13px;
+          }
         }
 
         a {
-          display: inline-block;
-          margin-top: 5px;
-          text-decoration: underline;
-          color: #aaa;
-
           img {
             width: 100%;
           }
         }
 
+        p {
+          display: inline-block;
+          margin-top: 3px;
+          line-height: 0;
+
+          a {
+            text-decoration: underline;
+            color: #aaa;
+            font-size: 13px;
+
+            @include mq(md) {
+              font-size: 10px;
+            }
+
+            @include mq(sm) {
+              font-size: 5px;
+            }
+          }
+        }
+
         dl {
           display: grid;
-          grid-template-columns: 20% 80%;
+          grid-template-columns: 30% 70%;
           margin: 10px;
 
           dt {
             font-weight: normal;
             margin: 5px;
+            font-size: 15px;
+            white-space: nowrap;
+
+            @include mq(md) {
+              font-size: 13px;
+            }
+
+            @include mq(sm) {
+              font-size: 10px;
+            }
           }
 
           dd {
             margin: 5px;
+            font-size: 15px;
+
+            @include mq(md) {
+              font-size: 13px;
+            }
+
+            @include mq(sm) {
+              font-size: 10px;
+            }
           }
         }
       }
@@ -172,7 +215,7 @@ body {
             font-size: 15px;
 
             @include mq(sm) {
-              font-size: 13px;
+              font-size: 10px;
             }
 
             &::after {
@@ -184,6 +227,7 @@ body {
 
               @include mq(sm) {
                 padding-left: 5px;
+                font-size: 10px;
               }
             }
           }
@@ -193,7 +237,7 @@ body {
               content: "\f00d";
 
               @include mq(sm) {
-                font-size: 13px;
+                font-size: 10px;
               }
             }
           }
@@ -258,107 +302,39 @@ body {
       }
     }
 
-    .sub {
-      width: 20%;
-      order: 3;
 
-      .float {
-        position: fixed;
-        right: 8%;
-        margin-top: 10%;
+    .top-btn {
+      display: inline-block;
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
 
-        @include mq(xl) {
-          right: 7%;
-        }
-
-        @include mq(lg) {
-          right: 6%;
-        }
-
-        @include mq(md) {
-          right: 5%;
-        }
+      a {
+        display: inline-block;
+        color: #F5A962;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #333;
+        position: relative;
 
         @include mq(sm) {
-          right: 4%;
-          margin-top: 10%;
+          width: 30px;
+          height: 30px;
         }
 
-        .switch {
-          padding-top: 20px;
+        &::after {
+          font-family: "Font Awesome 5 Free";
+          content: "\f106";
+          font-weight: 900;
+          font-size: 30px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
 
-          .switch-title {
-            text-align: center;
-            font-size: 12px;
-            margin-bottom: 5px;
-          }
-
-          .toggle-switch {
-            display: table;
-            font-size: 60px;
-            margin: 0 auto;
-
-            input {
-              display: none;
-
-              &:checked+label {
-                background: #125D98;
-
-                &::before {
-                  left: calc(100% - 30px + 0.05em);
-                }
-              }
-            }
-
-            label {
-              display: block;
-              position: relative;
-              width: 60px;
-              height: 30px;
-              border-radius: 1em;
-              background: #F5A962;
-              cursor: pointer;
-
-              &::before {
-                position: absolute;
-                top: 0.05em;
-                left: 0.05em;
-                width: calc(30px - 0.1em);
-                height: calc(30px - 0.1em);
-                border-radius: calc(1em - 0.1em);
-                background: #fff;
-                transition: .3s;
-                content: "";
-              }
-            }
-          }
-        }
-      }
-
-      .top-btn {
-        display: inline-block;
-        position: fixed;
-        right: 10px;
-        bottom: 10px;
-
-        a {
-          display: inline-block;
-          color: #F5A962;
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
-          background: #333;
-          position: relative;
-
-          &::after {
-            font-family: "Font Awesome 5 Free";
-            content: "\f106";
-            font-weight: 900;
-            font-size: 30px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+          @include mq(sm) {
+            font-size: 20px;
           }
         }
       }
@@ -376,6 +352,7 @@ body {
 
       @include mq(sm) {
         font-size: 10px;
+        padding: 20px;
       }
     }
   }
