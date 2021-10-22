@@ -164,6 +164,7 @@ body #wrapper .article .content p {
 }
 
 body #wrapper .article .content p a {
+  display: inline-block;
   text-decoration: underline;
   color: #aaa;
   font-size: 13px;
