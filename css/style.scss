@@ -275,13 +275,12 @@ body {
           font-size: 70px;
           font-weight: 900;
           white-space: nowrap;
-          color: #aaa;
-          opacity: .5;
+          color: #555;
           transition: .3s;
 
           &:hover {
-            opacity: 1;
             color: #F5A962;
+            cursor: pointer;
           }
 
           @include mq(xl) {

@@ -324,15 +324,14 @@ body #wrapper .side .my-name h1 {
   font-size: 70px;
   font-weight: 900;
   white-space: nowrap;
-  color: #aaa;
-  opacity: .5;
+  color: #555;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
 body #wrapper .side .my-name h1:hover {
-  opacity: 1;
   color: #F5A962;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
