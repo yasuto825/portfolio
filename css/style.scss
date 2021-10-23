@@ -118,20 +118,16 @@ body {
       margin: 10% 0;
 
       .content {
-        margin: 20px 20px 100px;
+        margin: 20px 40px 100px 20px;
 
-        h2 {
-          display: inline-block;
-          font-size: 20px;
-          margin-bottom: 5px;
+        @include mq(md) {
+          margin-right: 30px;
+          margin-bottom: 70px;
+        }
 
-          @include mq(md) {
-            font-size: 15px;
-          }
-
-          @include mq(sm) {
-            font-size: 13px;
-          }
+        @include mq(sm) {
+          margin-right: 20px;
+          margin-bottom: 50px;
         }
 
         a {
@@ -168,6 +164,7 @@ body {
             font-weight: normal;
             font-size: 15px;
             float: left;
+            line-height: 1.7;
 
             @include mq(md) {
               font-size: 13px;
@@ -181,6 +178,7 @@ body {
           dd {
             margin: 0 0 10px 80px;
             font-size: 15px;
+            line-height: 1.7;
 
             @include mq(md) {
               font-size: 13px;
@@ -188,6 +186,7 @@ body {
 
             @include mq(sm) {
               font-size: 10px;
+              margin-left: 60px;
             }
           }
         }
