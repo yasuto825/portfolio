@@ -118,7 +118,7 @@ body {
       margin: 10% 0;
 
       .content {
-        margin: 20px;
+        margin: 20px 20px 100px;
 
         h2 {
           display: inline-block;
@@ -162,15 +162,12 @@ body {
         }
 
         dl {
-          display: grid;
-          grid-template-columns: 30% 70%;
-          margin: 10px;
+          margin: 20px 10px;
 
           dt {
             font-weight: normal;
-            margin: 5px;
             font-size: 15px;
-            white-space: nowrap;
+            float: left;
 
             @include mq(md) {
               font-size: 13px;
@@ -182,7 +179,7 @@ body {
           }
 
           dd {
-            margin: 5px;
+            margin: 0 0 10px 80px;
             font-size: 15px;
 
             @include mq(md) {
@@ -280,7 +277,6 @@ body {
 
           &:hover {
             color: #F5A962;
-            cursor: pointer;
           }
 
           @include mq(xl) {
