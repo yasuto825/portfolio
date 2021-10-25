@@ -9,6 +9,7 @@ body #about {
   padding: 3rem;
   width: 100%;
   display: none;
+  z-index: 999;
 }
 
 @media screen and (max-width: 414px) {
@@ -147,6 +148,36 @@ body #wrapper .article .content {
     margin-right: 20px;
     margin-bottom: 50px;
   }
+}
+
+body #wrapper .article .content h2 {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  body #wrapper .article .content h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body #wrapper .article .content h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body #wrapper .article .content h2 {
+    font-size: 15px;
+  }
+}
+
+body #wrapper .article .content a:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: .8;
 }
 
 body #wrapper .article .content a img {

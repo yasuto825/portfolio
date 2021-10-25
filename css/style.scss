@@ -22,6 +22,7 @@ body {
     padding: 3rem;
     width: 100%;
     display: none;
+    z-index: 999;
 
     @include mq(sm) {
       padding: 1rem;
@@ -130,7 +131,30 @@ body {
           margin-bottom: 50px;
         }
 
+        h2 {
+          display: inline-block;
+          margin-bottom: 5px;
+          font-size: 25px;
+
+          @include mq(lg) {
+            font-size: 20px;
+          }
+
+          @include mq(md) {
+            font-size: 18px;
+          }
+
+          @include mq(sm) {
+            font-size: 15px;
+          }
+        }
+
         a {
+          &:hover {
+            transition: .3s;
+            opacity: .8;
+          }
+
           img {
             width: 100%;
           }
