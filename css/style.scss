@@ -163,7 +163,6 @@ body {
         p {
           display: inline-block;
           margin-top: 3px;
-          line-height: 0;
 
           a {
             display: inline-block;
@@ -172,11 +171,7 @@ body {
             font-size: 13px;
 
             @include mq(md) {
-              font-size: 10px;
-            }
-
-            @include mq(sm) {
-              font-size: 5px;
+              font-size: 11px;
             }
           }
         }
@@ -195,7 +190,7 @@ body {
             }
 
             @include mq(sm) {
-              font-size: 10px;
+              font-size: 11px;
             }
           }
 
@@ -209,7 +204,7 @@ body {
             }
 
             @include mq(sm) {
-              font-size: 10px;
+              font-size: 11px;
               margin-left: 60px;
             }
           }
