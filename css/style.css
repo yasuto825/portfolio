@@ -14,7 +14,7 @@ body #about {
 
 @media screen and (max-width: 414px) {
   body #about {
-    padding: 1rem;
+    padding: 10px;
   }
 }
 
@@ -35,7 +35,7 @@ body #about .about-inner dl {
 
 @media screen and (max-width: 414px) {
   body #about .about-inner dl {
-    margin: 0 auto;
+    margin: 0;
     position: relative;
   }
 }
@@ -82,22 +82,6 @@ body #about .about-inner dl .mail {
   text-decoration: underline;
 }
 
-body #about .about-inner dl .prf-sp {
-  display: none;
-}
-
-@media screen and (max-width: 414px) {
-  body #about .about-inner dl .prf-sp {
-    position: absolute;
-    top: -8px;
-    right: 0;
-    display: block;
-    width: 50px;
-    height: 50px;
-    border: 2px solid #F5A962;
-  }
-}
-
 body #about .about-inner img {
   width: 180px;
   height: 180px;
@@ -114,7 +98,10 @@ body #about .about-inner img {
 
 @media screen and (max-width: 414px) {
   body #about .about-inner img {
-    display: none;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #F5A962;
+    margin-top: 10px;
   }
 }
 
