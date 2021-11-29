@@ -1,7 +1,7 @@
 body {
   background: #000;
   color: #fff;
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 body #about {
@@ -25,7 +25,7 @@ body #about .about-inner {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -41,8 +41,10 @@ body #about .about-inner dl {
 }
 
 body #about .about-inner dl dt {
-  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
   font-weight: normal;
+  letter-spacing: 0.060em;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -140,6 +142,9 @@ body #wrapper .article .content {
 body #wrapper .article .content h2 {
   display: inline-block;
   margin-bottom: 5px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.060em;
   font-size: 25px;
 }
 
@@ -181,6 +186,7 @@ body #wrapper .article .content p a {
   text-decoration: underline;
   color: #aaa;
   font-size: 13px;
+  word-wrap: break-word;
 }
 
 @media screen and (max-width: 768px) {
@@ -190,45 +196,29 @@ body #wrapper .article .content p a {
 }
 
 body #wrapper .article .content dl {
-  margin: 20px 10px;
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body #wrapper .article .content dl dt {
+  width: 10%;
   font-weight: normal;
-  font-size: 15px;
-  float: left;
+  font-size: 16px;
+  letter-spacing: 0.060em;
   line-height: 1.7;
-}
-
-@media screen and (max-width: 768px) {
-  body #wrapper .article .content dl dt {
-    font-size: 13px;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  body #wrapper .article .content dl dt {
-    font-size: 11px;
-  }
+  margin-bottom: 15px;
 }
 
 body #wrapper .article .content dl dd {
-  margin: 0 0 10px 80px;
+  width: 90%;
   font-size: 15px;
+  letter-spacing: 0.060em;
   line-height: 1.7;
-}
-
-@media screen and (max-width: 768px) {
-  body #wrapper .article .content dl dd {
-    font-size: 13px;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  body #wrapper .article .content dl dd {
-    font-size: 11px;
-    margin-left: 60px;
-  }
+  word-wrap: break-word;
 }
 
 body #wrapper .side {
@@ -254,6 +244,9 @@ body #wrapper .side .float .about-btn {
 }
 
 body #wrapper .side .float .about-btn button {
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.060em;
   font-size: 15px;
 }
 
@@ -326,8 +319,10 @@ body #wrapper .side .my-name {
 }
 
 body #wrapper .side .my-name h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.060em;
   font-size: 70px;
-  font-weight: 900;
   white-space: nowrap;
   color: #555;
   -webkit-transition: .3s;

@@ -12,10 +12,17 @@ $breakpoints: ("sm": "screen and (max-width: 414px)",
   }
 }
 
+// google fonts
+@mixin oswald($weight:normal) {
+  font-family: 'Oswald', sans-serif;
+  font-weight: $weight;
+  letter-spacing: 0.060em;
+}
+
 body {
   background: #000;
   color: #fff;
-  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Sans JP', sans-serif;
 
   #about {
     background: #333;
@@ -31,7 +38,7 @@ body {
     .about-inner {
       display: flex;
       justify-content: space-between;
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
 
       dl {
@@ -43,8 +50,8 @@ body {
         }
 
         dt {
+          @include oswald();
           font-size: 20px;
-          font-weight: normal;
 
           @include mq(md) {
             font-size: 15px;
@@ -122,6 +129,7 @@ body {
         h2 {
           display: inline-block;
           margin-bottom: 5px;
+          @include oswald();
           font-size: 25px;
 
           @include mq(lg) {
@@ -157,6 +165,7 @@ body {
             text-decoration: underline;
             color: #aaa;
             font-size: 13px;
+            word-wrap: break-word;
 
             @include mq(md) {
               font-size: 11px;
@@ -165,36 +174,25 @@ body {
         }
 
         dl {
-          margin: 20px 10px;
+          margin: 20px 0px;
+          display: flex;
+          flex-wrap: wrap;
 
           dt {
+            width: 10%;
             font-weight: normal;
-            font-size: 15px;
-            float: left;
+            font-size: 16px;
+            letter-spacing: 0.060em;
             line-height: 1.7;
-
-            @include mq(md) {
-              font-size: 13px;
-            }
-
-            @include mq(sm) {
-              font-size: 11px;
-            }
+            margin-bottom: 15px;
           }
 
           dd {
-            margin: 0 0 10px 80px;
+            width: 90%;
             font-size: 15px;
+            letter-spacing: 0.060em;
             line-height: 1.7;
-
-            @include mq(md) {
-              font-size: 13px;
-            }
-
-            @include mq(sm) {
-              font-size: 11px;
-              margin-left: 60px;
-            }
+            word-wrap: break-word;
           }
         }
       }
@@ -216,6 +214,7 @@ body {
           }
 
           button {
+            @include oswald();
             font-size: 15px;
 
             @include mq(sm) {
@@ -275,8 +274,8 @@ body {
         }
 
         h1 {
+          @include oswald(bold);
           font-size: 70px;
-          font-weight: 900;
           white-space: nowrap;
           color: #555;
           transition: .3s;
