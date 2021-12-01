@@ -1,33 +1,32 @@
 $(function () {
   // 変数
-  const aboutArea = $("#about");
-  const aboutHeight = aboutArea.outerHeight(true);
+  const profileArea = $("#profile");
+  const profileHeight = profileArea.outerHeight(true);
 
-  // about-btnをクリックしたとき
-  $(".about-btn").on("click", function () {
-    $("#about").slideToggle(300);
-    $("#about").toggleClass("open");
-    $(".side button").toggleClass("close");
-    $(".my-name").fadeToggle(300);
+  // profile-btnをクリックしたとき
+  $(".prf-btn").on("click", function () {
+    $("#profile").slideToggle(300);
+    $("#profile").toggleClass("open");
+    $(".prf-btn button").toggleClass("close");
 
     if ($(".open").length) {
       // #wrapperのアニメーション
-      $("#wrapper").animate({ marginTop: aboutHeight }, 300);
+      $("#wrapper").animate({ marginTop: profileHeight }, 300);
 
-      // #aboutにCSSを追加
-      aboutArea.css({
+      // #profileにCSSを追加
+      profileArea.css({
         position: "fixed",
         top: 0,
       });
 
       // .floatのアニメーション
-      $(".float").animate({ top: aboutHeight }, 300);
+      $("#btn").animate({ top: profileHeight }, 300);
     } else {
       // #wrapperのアニメーション
       $("#wrapper").animate({ marginTop: 0 }, 300);
 
       // .floatのアニメーション
-      $(".float").animate({ top: "0px" }, 300);
+      $("#btn").animate({ top: "0px" }, 300);
     }
   });
 
@@ -36,7 +35,7 @@ $(function () {
     const speed = 500;
     const href = $(this).attr("href");
     const target = $(href == "#" || href == "" ? "html" : href);
-    const position = target.offset().top - aboutHeight;
+    const position = target.offset().top - profileHeight;
     $("html, body").animate({ scrollTop: position }, speed, "swing");
     return false;
   });

@@ -49,8 +49,8 @@
   </head>
   <body>
     <!-- プロフィール -->
-    <div id="about">
-      <div class="about-inner">
+    <div id="profile">
+      <div class="prf-inner">
         <dl>
           <!-- PROFILE -->
           <dt>PROFILE</dt>
@@ -76,10 +76,26 @@
       </div>
     </div>
 
-    <!-- コンテンツ -->
+    <!-- ボタン -->
+    <div id="btn">
+      <!-- プロフィールボタン -->
+      <div class="prf-btn">
+        <button>PROFILE</button>
+      </div>
+
+      <!-- アバウトボタン -->
+      <div class="about-btn">
+        <a href="about.html">ABOUT</a>
+      </div>
+    </div>
+
+    <!-- メインエリア -->
     <main id="wrapper">
-      <!-- メインエリア -->
-      <article class="article">
+      <!-- コンテンツ外枠 -->
+      <div class="content-wrapper">
+        <h1>PRODUCTION</h1>
+
+        <!-- コンテンツ -->
         <div class="content">
           <h2>SABANEKO</h2>
           <a href="https://yasuto825.github.io/SABANEKO/"
@@ -91,16 +107,14 @@
             >
           </p>
           <dl>
-            <dt>制作期間</dt>
-            <dd>1ヶ月</dd>
-            <dt>使用言語</dt>
-            <dd>HTML CSS jQuery</dd>
             <dt>概要</dt>
             <dd>
               架空のメンズお洋服ブランドをテーマに制作しました。情報量が多いサイトの為、コンテンツを横並びやグリッド形式にしてまとめました。
             </dd>
           </dl>
         </div>
+
+        <!-- コンテンツ -->
         <div class="content">
           <h2>Cresta Design</h2>
           <a href="https://yasuto825.github.io/cresta-design/"
@@ -112,16 +126,14 @@
             >
           </p>
           <dl>
-            <dt>制作期間</dt>
-            <dd>4日</dd>
-            <dt>使用言語</dt>
-            <dd>HTML Sass(SCSS) jQuery</dd>
             <dt>概要</dt>
             <dd>
               ユーザーの目の動きに合わせたデザインのサイトを、XDのデザインカンプからコーディングしました。
             </dd>
           </dl>
         </div>
+
+        <!-- コンテンツ -->
         <div class="content">
           <h2>DIGSMILE</h2>
           <a href="https://yasuto825.github.io/digsmile/"
@@ -133,114 +145,11 @@
             >
           </p>
           <dl>
-            <dt>制作期間</dt>
-            <dd>?日</dd>
-            <dt>使用言語</dt>
-            <dd>HTML Sass(SCSS) jQuery</dd>
             <dt>概要</dt>
             <dd>???????????????????</dd>
           </dl>
         </div>
-        <div class="content">
-          <h2>Todo List</h2>
-          <a href="https://yasuto825.github.io/todolist/"
-            ><img src="./images/todolist.png" alt="Todo List" />
-          </a>
-          <p>
-            <a href="https://yasuto825.github.io/todolist/"
-              >https://yasuto825.github.io/todolist/</a
-            >
-          </p>
-          <dl>
-            <dt>制作期間</dt>
-            <dd>5日</dd>
-            <dt>使用言語</dt>
-            <dd>HTML CSS JavaScript</dd>
-            <dt>概要</dt>
-            <dd>
-              ライブラリやフレームワークは使用せず、JavaScriptで基本的なTodo
-              Listを制作しました。
-            </dd>
-          </dl>
-        </div>
-        <div class="content">
-          <h2>Countdown App</h2>
-          <a href="https://yasuto825.github.io/countdown-app/"
-            ><img src="./images/countdown.png" alt="Countdowm"
-          /></a>
-          <p>
-            <a href="https://yasuto825.github.io/countdown-app/"
-              >https://yasuto825.github.io/countdown-app/</a
-            >
-          </p>
-          <dl>
-            <dt>制作期間</dt>
-            <dd>1日</dd>
-            <dt>使用言語</dt>
-            <dd>HTML CSS JavaScript</dd>
-            <dt>概要</dt>
-            <dd>設定した時刻までのカウントダウンをおこなうアプリです。</dd>
-          </dl>
-        </div>
-        <div class="content">
-          <h2>Meditation App</h2>
-          <a href="https://yasuto825.github.io/meditation-app/"
-            ><img src="./images/meditation.png" alt="meditation"
-          /></a>
-          <p>
-            <a href="https://yasuto825.github.io/meditation-app/"
-              >https://yasuto825.github.io/meditation-app/</a
-            >
-          </p>
-          <dl>
-            <dt>制作期間</dt>
-            <dd>3日</dd>
-            <dt>使用言語</dt>
-            <dd>HTML CSS JavaScript</dd>
-            <dt>概要</dt>
-            <dd>
-              深呼吸をカウントダウンし、補助するアプリです。CSSアニメーションで図形を変化させ、呼吸を表しています。
-            </dd>
-          </dl>
-        </div>
-        <div class="content">
-          <h2>Weather App</h2>
-          <a href="https://yasuto825.github.io/weather-app/"
-            ><img src="./images/weather.png" alt="weather"
-          /></a>
-          <p>
-            <a href="https://yasuto825.github.io/weather-app/"
-              >https://yasuto825.github.io/weather-app/</a
-            >
-          </p>
-          <dl>
-            <dt>制作期間</dt>
-            <dd>1週間</dd>
-            <dt>使用言語</dt>
-            <dd>HTML CSS JavaScript</dd>
-            <dt>概要</dt>
-            <dd>
-              Open WeatherのWeb
-              APIを使用し、世界中のリアルタイムの天気を表示できるよう制作しました。
-            </dd>
-          </dl>
-        </div>
-      </article>
-
-      <!-- サイドエリア -->
-      <aside class="side">
-        <div class="float">
-          <!-- アバウトボタン -->
-          <div class="about-btn">
-            <button>ABOUT</button>
-          </div>
-        </div>
-
-        <!-- 名前 -->
-        <div class="my-name">
-          <h1><a href="index.html"> yasuto yamamoto</a></h1>
-        </div>
-      </aside>
+      </div>
 
       <!-- TOPに戻るボタン -->
       <div class="top-btn">

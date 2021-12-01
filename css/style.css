@@ -4,7 +4,7 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-body #about {
+body #profile {
   background: #333;
   padding: 60px 20px;
   width: 100%;
@@ -13,18 +13,18 @@ body #about {
 }
 
 @media screen and (max-width: 768px) {
-  body #about {
+  body #profile {
     padding: 40px 20px;
   }
 }
 
 @media screen and (max-width: 414px) {
-  body #about {
+  body #profile {
     padding: 30px 10px;
   }
 }
 
-body #about .about-inner {
+body #profile .prf-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,18 +35,18 @@ body #about .about-inner {
   margin: 0 auto;
 }
 
-body #about .about-inner dl {
+body #profile .prf-inner dl {
   margin-top: 15px;
 }
 
 @media screen and (max-width: 414px) {
-  body #about .about-inner dl {
+  body #profile .prf-inner dl {
     margin: 0;
     position: relative;
   }
 }
 
-body #about .about-inner dl dt {
+body #profile .prf-inner dl dt {
   font-family: 'Oswald', sans-serif;
   font-weight: normal;
   letter-spacing: 0.060em;
@@ -54,25 +54,25 @@ body #about .about-inner dl dt {
 }
 
 @media screen and (max-width: 768px) {
-  body #about .about-inner dl dt {
+  body #profile .prf-inner dl dt {
     font-size: 15px;
     line-height: 25px;
   }
 }
 
 @media screen and (max-width: 414px) {
-  body #about .about-inner dl dt {
+  body #profile .prf-inner dl dt {
     font-size: 13px;
   }
 }
 
-body #about .about-inner dl dd {
+body #profile .prf-inner dl dd {
   line-height: 25px;
   margin: -20px 20px 30px 150px;
 }
 
 @media screen and (max-width: 768px) {
-  body #about .about-inner dl dd {
+  body #profile .prf-inner dl dd {
     line-height: 20px;
     margin: -20px 20px 10px 100px;
     font-size: 10px;
@@ -80,84 +80,179 @@ body #about .about-inner dl dd {
 }
 
 @media screen and (max-width: 414px) {
-  body #about .about-inner dl dd {
+  body #profile .prf-inner dl dd {
     margin: -20px 0 0 80px;
   }
 }
 
-body #about .about-inner dl .mail {
+body #profile .prf-inner dl .mail {
   margin-bottom: 0;
   text-decoration: underline;
 }
 
-body #about .about-inner .prf-img {
+body #profile .prf-inner .prf-img {
   width: 180px;
   margin-left: 10px;
   position: relative;
 }
 
 @media screen and (max-width: 768px) {
-  body #about .about-inner .prf-img {
+  body #profile .prf-inner .prf-img {
     width: 140px;
   }
 }
 
 @media screen and (max-width: 414px) {
-  body #about .about-inner .prf-img {
+  body #profile .prf-inner .prf-img {
     width: 100px;
   }
 }
 
-body #about .about-inner .prf-img img {
+body #profile .prf-inner .prf-img img {
   width: 100%;
   border-radius: 50%;
-  border: 3px solid #F5A962;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
+body #btn {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #btn .prf-btn {
+  display: inline-block;
+  padding: 20px;
+}
+
 @media screen and (max-width: 414px) {
-  body #about .about-inner .prf-img img {
-    border: 1px solid #F5A962;
+  body #btn .prf-btn {
+    padding: 10px;
+  }
+}
+
+body #btn .prf-btn button {
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.060em;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 414px) {
+  body #btn .prf-btn button {
+    font-size: 10px;
+  }
+}
+
+body #btn .prf-btn button::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
+  font-weight: 900;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 414px) {
+  body #btn .prf-btn button::after {
+    padding-left: 5px;
+    font-size: 10px;
+  }
+}
+
+body #btn .prf-btn .close::after {
+  content: "\f00d";
+}
+
+@media screen and (max-width: 414px) {
+  body #btn .prf-btn .close::after {
+    font-size: 10px;
+  }
+}
+
+body #btn .about-btn {
+  display: inline-block;
+  padding: 20px;
+}
+
+@media screen and (max-width: 414px) {
+  body #btn .about-btn {
+    padding: 10px;
+  }
+}
+
+body #btn .about-btn a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.060em;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 414px) {
+  body #btn .about-btn a {
+    font-size: 10px;
+  }
+}
+
+body #btn .about-btn a::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f105";
+  font-weight: 900;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 414px) {
+  body #btn .about-btn a::after {
+    padding-left: 5px;
+    font-size: 10px;
   }
 }
 
 body #wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding-top: 10%;
 }
 
-body #wrapper .article {
-  width: 80%;
-  max-width: 1200px;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  margin: 10% 0;
+body #wrapper .content-wrapper {
+  max-width: 1250px;
+  padding: 0 50px;
+  margin: 0 auto;
 }
 
-body #wrapper .article .content {
-  margin: 20px 40px 100px 20px;
+body #wrapper .content-wrapper h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.060em;
+  font-size: 30px;
+  text-align: center;
+  margin: 30px 0 60px;
+}
+
+body #wrapper .content-wrapper .content {
+  margin-bottom: 100px;
 }
 
 @media screen and (max-width: 768px) {
-  body #wrapper .article .content {
-    margin-right: 30px;
+  body #wrapper .content-wrapper .content {
     margin-bottom: 70px;
   }
 }
 
 @media screen and (max-width: 414px) {
-  body #wrapper .article .content {
-    margin-right: 20px;
+  body #wrapper .content-wrapper .content {
     margin-bottom: 50px;
   }
 }
 
-body #wrapper .article .content h2 {
+body #wrapper .content-wrapper .content h2 {
   display: inline-block;
   margin-bottom: 5px;
   font-family: 'Oswald', sans-serif;
@@ -167,39 +262,39 @@ body #wrapper .article .content h2 {
 }
 
 @media screen and (max-width: 1000px) {
-  body #wrapper .article .content h2 {
+  body #wrapper .content-wrapper .content h2 {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  body #wrapper .article .content h2 {
+  body #wrapper .content-wrapper .content h2 {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 414px) {
-  body #wrapper .article .content h2 {
+  body #wrapper .content-wrapper .content h2 {
     font-size: 15px;
   }
 }
 
-body #wrapper .article .content a:hover {
+body #wrapper .content-wrapper .content a:hover {
   -webkit-transition: .3s;
   transition: .3s;
   opacity: .8;
 }
 
-body #wrapper .article .content a img {
+body #wrapper .content-wrapper .content a img {
   width: 100%;
 }
 
-body #wrapper .article .content p {
+body #wrapper .content-wrapper .content p {
   display: inline-block;
   margin-top: 3px;
 }
 
-body #wrapper .article .content p a {
+body #wrapper .content-wrapper .content p a {
   display: inline-block;
   text-decoration: underline;
   color: #aaa;
@@ -208,171 +303,27 @@ body #wrapper .article .content p a {
 }
 
 @media screen and (max-width: 768px) {
-  body #wrapper .article .content p a {
+  body #wrapper .content-wrapper .content p a {
     font-size: 11px;
   }
 }
 
-body #wrapper .article .content dl {
-  margin: 20px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+body #wrapper .content-wrapper .content dl {
+  margin-top: 20px;
 }
 
-body #wrapper .article .content dl dt {
-  width: 10%;
+body #wrapper .content-wrapper .content dl dt {
   font-weight: normal;
   font-size: 16px;
   letter-spacing: 0.060em;
   line-height: 1.7;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-body #wrapper .article .content dl dd {
-  width: 90%;
+body #wrapper .content-wrapper .content dl dd {
   font-size: 15px;
   letter-spacing: 0.060em;
   line-height: 1.7;
-  word-wrap: break-word;
-}
-
-body #wrapper .side {
-  width: 20%;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-body #wrapper .side .float {
-  position: fixed;
-}
-
-body #wrapper .side .float .about-btn {
-  display: inline-block;
-  padding: 20px;
-}
-
-@media screen and (max-width: 414px) {
-  body #wrapper .side .float .about-btn {
-    padding: 10px;
-  }
-}
-
-body #wrapper .side .float .about-btn button {
-  font-family: 'Oswald', sans-serif;
-  font-weight: normal;
-  letter-spacing: 0.060em;
-  font-size: 15px;
-}
-
-@media screen and (max-width: 414px) {
-  body #wrapper .side .float .about-btn button {
-    font-size: 10px;
-  }
-}
-
-body #wrapper .side .float .about-btn button::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f107";
-  font-weight: 900;
-  font-size: 15px;
-  padding-left: 10px;
-}
-
-@media screen and (max-width: 414px) {
-  body #wrapper .side .float .about-btn button::after {
-    padding-left: 5px;
-    font-size: 10px;
-  }
-}
-
-body #wrapper .side .float .about-btn .close::after {
-  content: "\f00d";
-}
-
-@media screen and (max-width: 414px) {
-  body #wrapper .side .float .about-btn .close::after {
-    font-size: 10px;
-  }
-}
-
-body #wrapper .side .my-name {
-  position: fixed;
-  left: 11%;
-  margin-top: 11%;
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-}
-
-@media screen and (max-width: 1200px) {
-  body #wrapper .side .my-name {
-    left: 10%;
-    margin-top: 12%;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  body #wrapper .side .my-name {
-    left: 9%;
-    margin-top: 13%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body #wrapper .side .my-name {
-    left: 6%;
-    margin-top: 14%;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  body #wrapper .side .my-name {
-    left: 10px;
-    margin-top: 17%;
-  }
-}
-
-body #wrapper .side .my-name h1 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.060em;
-  font-size: 70px;
-  white-space: nowrap;
-  color: #555;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-body #wrapper .side .my-name h1:hover {
-  color: #F5A962;
-}
-
-@media screen and (max-width: 1200px) {
-  body #wrapper .side .my-name h1 {
-    font-size: 60px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  body #wrapper .side .my-name h1 {
-    font-size: 50px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body #wrapper .side .my-name h1 {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  body #wrapper .side .my-name h1 {
-    font-size: 30px;
-  }
 }
 
 body #wrapper .top-btn {
