@@ -1,0 +1,146 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body #btn {
+  position: fixed;
+  top: 0;
+}
+
+body #btn .index-btn {
+  display: inline-block;
+  padding: 20px;
+}
+
+@media screen and (max-width: 414px) {
+  body #btn .index-btn {
+    padding: 10px;
+  }
+}
+
+body #btn .index-btn a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.060em;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 414px) {
+  body #btn .index-btn a {
+    font-size: 10px;
+  }
+}
+
+body #btn .index-btn a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f104";
+  font-weight: 900;
+  font-size: 15px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 414px) {
+  body #btn .index-btn a::before {
+    padding-right: 5px;
+    font-size: 10px;
+  }
+}
+
+body #wrapper {
+  padding-top: 10%;
+}
+
+body #wrapper .content-wrapper {
+  max-width: 1220px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 414px) {
+  body #wrapper .content-wrapper {
+    padding: 0 10px;
+  }
+}
+
+body #wrapper .content-wrapper h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.060em;
+  font-size: 60px;
+  text-align: center;
+  margin: 30px 0 100px;
+}
+
+@media screen and (max-width: 768px) {
+  body #wrapper .content-wrapper h1 {
+    font-size: 40px;
+    margin: 30px 0 60px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body #wrapper .content-wrapper h1 {
+    font-size: 30px;
+  }
+}
+
+body #wrapper .top-btn {
+  display: inline-block;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+body #wrapper .top-btn a {
+  display: inline-block;
+  color: #F5A962;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #333;
+  position: relative;
+}
+
+@media screen and (max-width: 414px) {
+  body #wrapper .top-btn a {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+body #wrapper .top-btn a::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f106";
+  font-weight: 900;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 414px) {
+  body #wrapper .top-btn a::after {
+    font-size: 20px;
+  }
+}
+
+body footer small {
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  display: block;
+  padding: 30px;
+  background: #333;
+}
+
+@media screen and (max-width: 414px) {
+  body footer small {
+    font-size: 10px;
+    padding: 20px;
+  }
+}
+/*# sourceMappingURL=about.css.map */

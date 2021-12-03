@@ -1,4 +1,12 @@
 $(function () {
+  // トップページアニメーション
+  setTimeout(function () {
+    $(".start p").fadeIn(1600);
+  }, 500); //0.5秒後にロゴをフェードイン!
+  setTimeout(function () {
+    $(".start").fadeOut(500);
+  }, 2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+
   // 変数
   const profileArea = $("#profile");
   const profileHeight = profileArea.outerHeight(true);

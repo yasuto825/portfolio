@@ -1,0 +1,150 @@
+//breakpoints
+$breakpoints: ("sm": "screen and (max-width: 414px)",
+  "md": "screen and (max-width: 768px)",
+  "lg": "screen and (max-width: 1000px)",
+  "xl": "screen and (max-width: 1200px)"
+) !default;
+
+// mixin
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints,$breakpoint)} {
+    @content;
+  }
+}
+
+// google fonts
+@mixin oswald($weight:normal) {
+  font-family: 'Oswald', sans-serif;
+  font-weight: $weight;
+  letter-spacing: 0.060em;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+
+  // ボタン
+  #btn {
+    position: fixed;
+    top: 0;
+
+    .index-btn {
+      display: inline-block;
+      padding: 20px;
+
+      @include mq(sm) {
+        padding: 10px;
+      }
+
+      a {
+        @include oswald();
+        font-size: 15px;
+
+        @include mq(sm) {
+          font-size: 10px;
+        }
+
+        &::before {
+          font-family: "Font Awesome 5 Free";
+          content: "\f104";
+          font-weight: 900;
+          font-size: 15px;
+          padding-right: 10px;
+
+          @include mq(sm) {
+            padding-right: 5px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  // メインエリア
+  #wrapper {
+    padding-top: 10%;
+
+    // コンテンツ外枠
+    .content-wrapper {
+      max-width: 1220px;
+      padding: 0 20px;
+      margin: 0 auto;
+
+      @include mq(sm) {
+        padding: 0 10px;
+      }
+
+      h1 {
+        @include oswald($weight:bold);
+        font-size: 60px;
+        text-align: center;
+        margin: 30px 0 100px;
+
+        @include mq(md) {
+          font-size: 40px;
+          margin: 30px 0 60px;
+        }
+
+        @include mq(sm) {
+          font-size: 30px;
+        }
+      }
+    }
+
+    // TOPに戻るボタン
+    .top-btn {
+      display: inline-block;
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+
+      a {
+        display: inline-block;
+        color: #F5A962;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #333;
+        position: relative;
+
+        @include mq(sm) {
+          width: 30px;
+          height: 30px;
+        }
+
+        &::after {
+          font-family: "Font Awesome 5 Free";
+          content: "\f106";
+          font-weight: 900;
+          font-size: 30px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          @include mq(sm) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  // フッター
+  footer {
+    small {
+      font-size: 15px;
+      text-align: center;
+      color: #fff;
+      display: block;
+      padding: 30px;
+      background: #333;
+
+      @include mq(sm) {
+        font-size: 10px;
+        padding: 20px;
+      }
+    }
+  }
+}

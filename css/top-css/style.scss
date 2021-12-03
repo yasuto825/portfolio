@@ -27,25 +27,29 @@ body {
   // プロフィール
   #profile {
     background: #333;
-    padding: 60px 20px;
+    padding: 60px 0;
     width: 100%;
     display: none;
     z-index: 999;
 
     @include mq(md) {
-      padding: 40px 20px;
+      padding: 40px 0;
     }
 
-
     @include mq(sm) {
-      padding: 30px 10px;
+      padding: 30px 0;
     }
 
     .prf-inner {
       display: flex;
       justify-content: space-between;
-      max-width: 1200px;
+      max-width: 1220px;
+      padding: 0 20px;
       margin: 0 auto;
+
+      @include mq(sm) {
+        padding: 0 10px;
+      }
 
       dl {
         margin-top: 15px;
@@ -202,15 +206,28 @@ body {
 
     // コンテンツ外枠
     .content-wrapper {
-      max-width: 1250px;
-      padding: 0 50px;
+      max-width: 1220px;
+      padding: 0 20px;
       margin: 0 auto;
+
+      @include mq(sm) {
+        padding: 0 10px;
+      }
 
       h1 {
         @include oswald($weight:bold);
-        font-size: 30px;
+        font-size: 60px;
         text-align: center;
-        margin: 30px 0 60px;
+        margin: 30px 0 100px;
+
+        @include mq(md) {
+          font-size: 40px;
+          margin: 30px 0 60px;
+        }
+
+        @include mq(sm) {
+          font-size: 30px;
+        }
       }
 
       // コンテンツ
@@ -237,10 +254,6 @@ body {
 
           @include mq(md) {
             font-size: 18px;
-          }
-
-          @include mq(sm) {
-            font-size: 15px;
           }
         }
 
@@ -284,7 +297,7 @@ body {
           }
 
           dd {
-            font-size: 15px;
+            font-size: 16px;
             letter-spacing: 0.060em;
             line-height: 1.7;
           }
@@ -344,6 +357,37 @@ body {
       @include mq(sm) {
         font-size: 10px;
         padding: 20px;
+      }
+    }
+  }
+
+  // トップページアニメーション
+  .start {
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9000;
+
+    p {
+      @include oswald($weight:bold);
+      font-size: 60px;
+      text-align: center;
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      display: none;
+      width: 100%;
+      z-index: 9999;
+
+      @include mq(md) {
+        font-size: 45px;
+      }
+
+      @include mq(sm) {
+        font-size: 35px;
       }
     }
   }
