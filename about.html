@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yasuto Yamamoto</title>
+    <title>Yasuto Yamamoto | | ABOUT</title>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,7 +37,7 @@
   </head>
   <body>
     <!-- ボタン -->
-    <div id="btn">
+    <div class="button" id="btn">
       <!-- トップページボタン -->
       <div class="index-btn">
         <a href="index.html">TOP</a>
@@ -45,36 +45,50 @@
     </div>
 
     <!-- メインエリア -->
-    <main id="wrapper">
+    <main class="wrapper" id="wrapper">
       <!-- コンテンツ外枠 -->
       <div class="content-wrapper">
         <h1>ABOUT</h1>
 
+        <!-- コンテンツ -->
         <div class="content">
-          <i class="fab fa-html5"></i>
-          <h2>HTML</h2>
-          <p></p>
+          <div class="content-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <p>
+            レイアウトに沿ったHTMLタグを使用し、様々なコンテンツを適切にグループ分けすることを意識しています。
+          </p>
         </div>
-        <div class="content">
-          <i class="fab fa-css3"></i>
-          <h2>CSS</h2>
-          <p></p>
-        </div>
-        <div class="content">
-          <i class="fab fa-sass"></i>
-          <h2>Sass</h2>
-          <p></p>
-        </div>
-        <div class="content">
-          <i class="fab fa-js"></i>
-          <h2>jQuery</h2>
-          <p></p>
-        </div>
-      </div>
 
-      <!-- TOPに戻るボタン -->
-      <div class="top-btn">
-        <a href="#wrapper"></a>
+        <!-- コンテンツ -->
+        <div class="content">
+          <div class="content-icon">
+            <i class="fab fa-css3"></i>
+          </div>
+          <p>
+            スタイリングでは、プロパティの量を削減するために値をまとめて記述することや、命名規則を統一すること、カスケーディングによる優先度を意識しています。
+          </p>
+        </div>
+
+        <!-- コンテンツ -->
+        <div class="content">
+          <div class="content-icon">
+            <i class="fab fa-sass"></i>
+          </div>
+          <p>
+            Sassでは、ネストやMixinを活用し、コードを効率的に書けるように意識しています。
+          </p>
+        </div>
+
+        <!-- コンテンツ -->
+        <div class="content">
+          <div class="content-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <p>
+            jQueryのメソッドを使用した主なアニメーションでは、CSSアニメーションとの組み合わせを行い、処理が軽くなるよう意識しています。
+          </p>
+        </div>
       </div>
     </main>
 

@@ -25,7 +25,7 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
 
   // ボタン
-  #btn {
+  .button {
     position: fixed;
     top: 0;
 
@@ -62,12 +62,12 @@ body {
   }
 
   // メインエリア
-  #wrapper {
-    padding-top: 10%;
+  .wrapper {
+    padding: 10% 0;
 
     // コンテンツ外枠
     .content-wrapper {
-      max-width: 1220px;
+      max-width: 620px;
       padding: 0 20px;
       margin: 0 auto;
 
@@ -90,42 +90,34 @@ body {
           font-size: 30px;
         }
       }
-    }
 
-    // TOPに戻るボタン
-    .top-btn {
-      display: inline-block;
-      position: fixed;
-      right: 10px;
-      bottom: 10px;
+      // コンテンツ
+      .content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
 
-      a {
-        display: inline-block;
-        color: #F5A962;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: #333;
-        position: relative;
+        .content-icon {
+          width: 120px;
 
-        @include mq(sm) {
-          width: 30px;
-          height: 30px;
+          .fab {
+            font-size: 100px;
+          }
+
+          .fa-css3 {
+            font-size: 90px;
+          }
+
+          .fa-sass {
+            font-size: 80px;
+          }
         }
 
-        &::after {
-          font-family: "Font Awesome 5 Free";
-          content: "\f106";
-          font-weight: 900;
-          font-size: 30px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-
-          @include mq(sm) {
-            font-size: 20px;
-          }
+        p {
+          width: calc(100% - 120px);
+          font-size: 16px;
+          letter-spacing: 0.060em;
+          line-height: 1.7;
         }
       }
     }

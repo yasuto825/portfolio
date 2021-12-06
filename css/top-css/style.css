@@ -4,7 +4,7 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-body #profile {
+body .profile {
   background: #333;
   padding: 60px 0;
   width: 100%;
@@ -13,18 +13,18 @@ body #profile {
 }
 
 @media screen and (max-width: 768px) {
-  body #profile {
+  body .profile {
     padding: 40px 0;
   }
 }
 
 @media screen and (max-width: 414px) {
-  body #profile {
+  body .profile {
     padding: 30px 0;
   }
 }
 
-body #profile .prf-inner {
+body .profile .prf-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,23 +37,23 @@ body #profile .prf-inner {
 }
 
 @media screen and (max-width: 414px) {
-  body #profile .prf-inner {
+  body .profile .prf-inner {
     padding: 0 10px;
   }
 }
 
-body #profile .prf-inner dl {
+body .profile .prf-inner dl {
   margin-top: 15px;
 }
 
 @media screen and (max-width: 414px) {
-  body #profile .prf-inner dl {
+  body .profile .prf-inner dl {
     margin: 0;
     position: relative;
   }
 }
 
-body #profile .prf-inner dl dt {
+body .profile .prf-inner dl dt {
   font-family: 'Oswald', sans-serif;
   font-weight: normal;
   letter-spacing: 0.060em;
@@ -61,25 +61,25 @@ body #profile .prf-inner dl dt {
 }
 
 @media screen and (max-width: 768px) {
-  body #profile .prf-inner dl dt {
+  body .profile .prf-inner dl dt {
     font-size: 15px;
     line-height: 25px;
   }
 }
 
 @media screen and (max-width: 414px) {
-  body #profile .prf-inner dl dt {
+  body .profile .prf-inner dl dt {
     font-size: 13px;
   }
 }
 
-body #profile .prf-inner dl dd {
+body .profile .prf-inner dl dd {
   line-height: 25px;
   margin: -20px 20px 30px 150px;
 }
 
 @media screen and (max-width: 768px) {
-  body #profile .prf-inner dl dd {
+  body .profile .prf-inner dl dd {
     line-height: 20px;
     margin: -20px 20px 10px 100px;
     font-size: 10px;
@@ -87,35 +87,35 @@ body #profile .prf-inner dl dd {
 }
 
 @media screen and (max-width: 414px) {
-  body #profile .prf-inner dl dd {
+  body .profile .prf-inner dl dd {
     margin: -20px 0 0 80px;
   }
 }
 
-body #profile .prf-inner dl .mail {
+body .profile .prf-inner dl .mail {
   margin-bottom: 0;
   text-decoration: underline;
 }
 
-body #profile .prf-inner .prf-img {
+body .profile .prf-inner .prf-img {
   width: 180px;
   margin-left: 10px;
   position: relative;
 }
 
 @media screen and (max-width: 768px) {
-  body #profile .prf-inner .prf-img {
+  body .profile .prf-inner .prf-img {
     width: 140px;
   }
 }
 
 @media screen and (max-width: 414px) {
-  body #profile .prf-inner .prf-img {
+  body .profile .prf-inner .prf-img {
     width: 100px;
   }
 }
 
-body #profile .prf-inner .prf-img img {
+body .profile .prf-inner .prf-img img {
   width: 100%;
   border-radius: 50%;
   position: absolute;
@@ -124,7 +124,7 @@ body #profile .prf-inner .prf-img img {
           transform: translateY(-50%);
 }
 
-body #btn {
+body .button {
   position: fixed;
   top: 0;
   width: 100%;
@@ -136,18 +136,18 @@ body #btn {
           justify-content: space-between;
 }
 
-body #btn .prf-btn {
+body .button .prf-btn {
   display: inline-block;
   padding: 20px;
 }
 
 @media screen and (max-width: 414px) {
-  body #btn .prf-btn {
+  body .button .prf-btn {
     padding: 10px;
   }
 }
 
-body #btn .prf-btn button {
+body .button .prf-btn button {
   font-family: 'Oswald', sans-serif;
   font-weight: normal;
   letter-spacing: 0.060em;
@@ -155,12 +155,12 @@ body #btn .prf-btn button {
 }
 
 @media screen and (max-width: 414px) {
-  body #btn .prf-btn button {
+  body .button .prf-btn button {
     font-size: 10px;
   }
 }
 
-body #btn .prf-btn button::after {
+body .button .prf-btn button::after {
   font-family: "Font Awesome 5 Free";
   content: "\f107";
   font-weight: 900;
@@ -169,34 +169,34 @@ body #btn .prf-btn button::after {
 }
 
 @media screen and (max-width: 414px) {
-  body #btn .prf-btn button::after {
+  body .button .prf-btn button::after {
     padding-left: 5px;
     font-size: 10px;
   }
 }
 
-body #btn .prf-btn .close::after {
+body .button .prf-btn .close::after {
   content: "\f00d";
 }
 
 @media screen and (max-width: 414px) {
-  body #btn .prf-btn .close::after {
+  body .button .prf-btn .close::after {
     font-size: 10px;
   }
 }
 
-body #btn .about-btn {
+body .button .about-btn {
   display: inline-block;
   padding: 20px;
 }
 
 @media screen and (max-width: 414px) {
-  body #btn .about-btn {
+  body .button .about-btn {
     padding: 10px;
   }
 }
 
-body #btn .about-btn a {
+body .button .about-btn a {
   font-family: 'Oswald', sans-serif;
   font-weight: normal;
   letter-spacing: 0.060em;
@@ -204,12 +204,12 @@ body #btn .about-btn a {
 }
 
 @media screen and (max-width: 414px) {
-  body #btn .about-btn a {
+  body .button .about-btn a {
     font-size: 10px;
   }
 }
 
-body #btn .about-btn a::after {
+body .button .about-btn a::after {
   font-family: "Font Awesome 5 Free";
   content: "\f105";
   font-weight: 900;
@@ -218,29 +218,29 @@ body #btn .about-btn a::after {
 }
 
 @media screen and (max-width: 414px) {
-  body #btn .about-btn a::after {
+  body .button .about-btn a::after {
     padding-left: 5px;
     font-size: 10px;
   }
 }
 
-body #wrapper {
+body .wrapper {
   padding-top: 10%;
 }
 
-body #wrapper .content-wrapper {
+body .wrapper .content-wrapper {
   max-width: 1220px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 414px) {
-  body #wrapper .content-wrapper {
+  body .wrapper .content-wrapper {
     padding: 0 10px;
   }
 }
 
-body #wrapper .content-wrapper h1 {
+body .wrapper .content-wrapper h1 {
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   letter-spacing: 0.060em;
@@ -250,35 +250,35 @@ body #wrapper .content-wrapper h1 {
 }
 
 @media screen and (max-width: 768px) {
-  body #wrapper .content-wrapper h1 {
+  body .wrapper .content-wrapper h1 {
     font-size: 40px;
     margin: 30px 0 60px;
   }
 }
 
 @media screen and (max-width: 414px) {
-  body #wrapper .content-wrapper h1 {
+  body .wrapper .content-wrapper h1 {
     font-size: 30px;
   }
 }
 
-body #wrapper .content-wrapper .content {
+body .wrapper .content-wrapper .content {
   margin-bottom: 100px;
 }
 
 @media screen and (max-width: 768px) {
-  body #wrapper .content-wrapper .content {
+  body .wrapper .content-wrapper .content {
     margin-bottom: 70px;
   }
 }
 
 @media screen and (max-width: 414px) {
-  body #wrapper .content-wrapper .content {
+  body .wrapper .content-wrapper .content {
     margin-bottom: 50px;
   }
 }
 
-body #wrapper .content-wrapper .content h2 {
+body .wrapper .content-wrapper .content h2 {
   display: inline-block;
   margin-bottom: 5px;
   font-family: 'Oswald', sans-serif;
@@ -288,33 +288,33 @@ body #wrapper .content-wrapper .content h2 {
 }
 
 @media screen and (max-width: 1000px) {
-  body #wrapper .content-wrapper .content h2 {
+  body .wrapper .content-wrapper .content h2 {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  body #wrapper .content-wrapper .content h2 {
+  body .wrapper .content-wrapper .content h2 {
     font-size: 18px;
   }
 }
 
-body #wrapper .content-wrapper .content a:hover {
+body .wrapper .content-wrapper .content a:hover {
   -webkit-transition: .3s;
   transition: .3s;
   opacity: .8;
 }
 
-body #wrapper .content-wrapper .content a img {
+body .wrapper .content-wrapper .content a img {
   width: 100%;
 }
 
-body #wrapper .content-wrapper .content p {
+body .wrapper .content-wrapper .content p {
   display: inline-block;
   margin-top: 3px;
 }
 
-body #wrapper .content-wrapper .content p a {
+body .wrapper .content-wrapper .content p a {
   display: inline-block;
   text-decoration: underline;
   color: #aaa;
@@ -323,16 +323,16 @@ body #wrapper .content-wrapper .content p a {
 }
 
 @media screen and (max-width: 768px) {
-  body #wrapper .content-wrapper .content p a {
+  body .wrapper .content-wrapper .content p a {
     font-size: 11px;
   }
 }
 
-body #wrapper .content-wrapper .content dl {
+body .wrapper .content-wrapper .content dl {
   margin-top: 20px;
 }
 
-body #wrapper .content-wrapper .content dl dt {
+body .wrapper .content-wrapper .content dl dt {
   font-weight: normal;
   font-size: 16px;
   letter-spacing: 0.060em;
@@ -340,20 +340,20 @@ body #wrapper .content-wrapper .content dl dt {
   margin-bottom: 10px;
 }
 
-body #wrapper .content-wrapper .content dl dd {
+body .wrapper .content-wrapper .content dl dd {
   font-size: 16px;
   letter-spacing: 0.060em;
   line-height: 1.7;
 }
 
-body #wrapper .top-btn {
+body .wrapper .top-btn {
   display: inline-block;
   position: fixed;
   right: 10px;
   bottom: 10px;
 }
 
-body #wrapper .top-btn a {
+body .wrapper .top-btn a {
   display: inline-block;
   color: #F5A962;
   width: 50px;
@@ -364,13 +364,13 @@ body #wrapper .top-btn a {
 }
 
 @media screen and (max-width: 414px) {
-  body #wrapper .top-btn a {
+  body .wrapper .top-btn a {
     width: 30px;
     height: 30px;
   }
 }
 
-body #wrapper .top-btn a::after {
+body .wrapper .top-btn a::after {
   font-family: "Font Awesome 5 Free";
   content: "\f106";
   font-weight: 900;
@@ -383,7 +383,7 @@ body #wrapper .top-btn a::after {
 }
 
 @media screen and (max-width: 414px) {
-  body #wrapper .top-btn a::after {
+  body .wrapper .top-btn a::after {
     font-size: 20px;
   }
 }
